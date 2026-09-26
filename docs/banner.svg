@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="520" viewBox="0 0 1440 520" role="img" aria-labelledby="title desc">
+<title id="title">Eventra — Campus ideas, moving forward.</title><desc id="desc">Campus event management: propose, review, approve.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#191529"/><stop offset="1" stop-color="#43276a"/></linearGradient></defs>
+<rect width="1440" height="520" rx="24" fill="url(#bg)"/>
+<circle cx="1340" cy="15" r="290" fill="none" stroke="#75509d" stroke-opacity=".3"/><circle cx="1340" cy="15" r="370" fill="none" stroke="#75509d" stroke-opacity=".2"/>
+<rect x="70" y="60" width="48" height="48" rx="13" fill="#d2ef91"/><text x="94" y="94" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#211a36">E</text>
+<text x="138" y="91" font-family="Arial,sans-serif" font-size="16" letter-spacing="4" fill="#d2ef91">CAMPUS EVENT MANAGEMENT</text>
+<text x="70" y="222" font-family="Arial,sans-serif" font-size="100" font-weight="700" letter-spacing="-4" fill="#ffffff">Eventra</text>
+<text x="74" y="283" font-family="Arial,sans-serif" font-size="32" fill="#e0d5ee">Campus ideas, moving forward.</text>
+<text x="74" y="329" font-family="Arial,sans-serif" font-size="18" fill="#bfb0d0">A clear path from the first proposal to the final decision.</text>
+<g font-family="Arial,sans-serif"><rect x="74" y="394" width="105" height="36" rx="18" fill="#ffffff" fill-opacity=".09"/><text x="126" y="418" text-anchor="middle" font-size="14" fill="#eee6f7">Python</text><rect x="190" y="394" width="90" height="36" rx="18" fill="#ffffff" fill-opacity=".09"/><text x="235" y="418" text-anchor="middle" font-size="14" fill="#eee6f7">Flask</text><rect x="291" y="394" width="97" height="36" rx="18" fill="#ffffff" fill-opacity=".09"/><text x="340" y="418" text-anchor="middle" font-size="14" fill="#eee6f7">SQLite</text></g>
+<g font-family="Arial,sans-serif"><rect x="930" y="128" width="400" height="278" rx="20" fill="#20182f" stroke="#63467e"/><text x="958" y="168" font-size="12" letter-spacing="3" fill="#bfb0d0">THE EVENT JOURNEY</text><path d="M977 214V348" stroke="#71528f" stroke-width="2"/>
+<circle cx="977" cy="214" r="15" fill="#513876"/><text x="977" y="219" text-anchor="middle" font-size="12" fill="white">1</text><text x="1012" y="219" font-size="21" fill="white">Propose your idea</text>
+<circle cx="977" cy="281" r="15" fill="#7750ad"/><text x="977" y="286" text-anchor="middle" font-size="12" fill="white">2</text><text x="1012" y="286" font-size="21" fill="white">Review and refine</text>
+<circle cx="977" cy="348" r="15" fill="#d2ef91"/><path d="m971 348 4 4 8-9" fill="none" stroke="#211a36" stroke-width="2"/><text x="1012" y="353" font-size="21" fill="#d2ef91">Approve and schedule</text></g></svg>
