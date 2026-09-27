@@ -110,79 +110,7 @@ Eventra uses server-rendered pages. The Python backend handles validation, autho
 
 Scheduling uses **Riyadh time (UTC+3)**. Events start and end on the same day. Audit timestamps use **UTC**.
 
-## Run it locally
 
-### 1. Get the project
-
-Install Python 3.12 and Git, then open a terminal:
-
-```bash
-git clone https://github.com/wasmiarashid-cloud/Eventra.git
-cd Eventra
-```
-
-You can also choose **Code → Download ZIP** on GitHub and extract it.
-
-### 2. Create an environment and install dependencies
-
-**Windows PowerShell**
-
-```powershell
-py -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
-Copy-Item .env.example .env
-.\.venv\Scripts\python.exe -c "import secrets; print(secrets.token_hex(32))"
-```
-
-**macOS / Linux**
-
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements-dev.txt
-cp .env.example .env
-.venv/bin/python -c "import secrets; print(secrets.token_hex(32))"
-```
-
-Open `.env` and replace the `SECRET_KEY` placeholder with the generated value. Keep `COOKIE_SECURE=0` for local HTTP. Never commit your real `.env` file.
-
-### 3. Initialize and start
-
-**Windows PowerShell**
-
-```powershell
-.\.venv\Scripts\python.exe -m flask --app eventra init-db
-.\.venv\Scripts\python.exe -m flask --app eventra seed-demo
-.\.venv\Scripts\python.exe -m flask --app eventra run
-```
-
-**macOS / Linux**
-
-```bash
-.venv/bin/python -m flask --app eventra init-db
-.venv/bin/python -m flask --app eventra seed-demo
-.venv/bin/python -m flask --app eventra run
-```
-
-Open **http://127.0.0.1:5000**. The seed command asks you to choose a password between 12 and 128 characters and only works with an empty database.
-
-## Try the complete journey
-
-| Demo account | Role |
-| :--- | :--- |
-| `requester@example.com` | Submit and revise proposals |
-| `coordinator@example.com` | Review and forward proposals |
-| `approver@example.com` | Make final decisions |
-
-Use the password you chose during seeding for all three accounts. No working password is published in this repository.
-
-1. Sign in as the requester and submit a future event.
-2. Sign out, then sign in as the coordinator and request changes with feedback.
-3. Return as the requester, edit the proposal, and resubmit it.
-4. As the coordinator, forward the revised proposal.
-5. As the approver, approve the event.
-6. Open the calendar for the event's month and inspect its decision timeline.
-
-To create individual accounts, run `python -m flask --app eventra create-user` using your virtual environment's Python. Public registration always creates requester accounts; staff roles are assigned through this administrative command.
 
 ## Testing and review
 
